@@ -16,9 +16,7 @@ gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
 apt-get update && apt-get -y upgrade && apt-get -y install tor-arm deb.torproject.org-keyring tor
 
 #download the tor exit notice
-wget --no-check-certificate -P /var/run/tor/ https://raw.githubusercontent.com/likvidera/BadOnions/master/SwehackExitNotice/tor-exit-notice.html
-#normal exit-notice
-#wget --no-check-certificate -P /var/run/tor/ https://gitweb.torproject.org/tor.git/plain/contrib/operator-tools/tor-exit-notice.html
+wget --no-check-certificate -P /var/run/tor/ https://raw.githubusercontent.com/redpois0n/deploy-relay/master/index.html
 
 #apply correct user, rights to the tor folder
 chown -R debian-tor:debian-tor /var/run/tor
