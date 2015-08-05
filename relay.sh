@@ -50,7 +50,7 @@ ContactInfo $CONTACT
 ORPort 443                        
 DirPort 80
 # Display page if visiting using port 80 HTTP
-DirPortFrontPage /var/run/tor/tor-exit-notice.html    
+DirPortFrontPage /var/run/tor/index.html    
 
 # Less disk usage
 AvoidDiskWrites 1
